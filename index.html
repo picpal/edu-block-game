@@ -335,7 +335,7 @@
   /* Palette -------------------------------------------------------------- */
   .palette{
     margin-top:auto;
-    margin-bottom:8px;
+    margin-bottom:38px;
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
@@ -599,19 +599,19 @@
     var rowGap = 12;
     // Reserve space for header (~70) + problem (~130) + palette (~260)
     // + gaps/safe-areas + slack. Tunable single constant.
-    var reserved = 472;
+    var reserved = 502;
     if (vh <= 580){
       cap = 38;
       rowGap = 6;
-      reserved = 342;
+      reserved = 372;
     } else if (vh <= 680){
       cap = 46;
       rowGap = 8;
-      reserved = 372;
+      reserved = 402;
     } else if (vh <= 760){
       cap = 56;
       rowGap = 10;
-      reserved = 412;
+      reserved = 442;
     }
     var availHForCells = vh - reserved;
     // 2 rows of cells with one inter-row gap.
